@@ -24,7 +24,7 @@ public class houses {
 			if (size == 2) {
 				height = "large";
 			}
-			drawHouse(height, Color.red);
+			drawHouse(height, Color.white);
 		}
 	}
 
@@ -42,6 +42,7 @@ public class houses {
 		}
 		Hieu.setSpeed(500);
 		Hieu.penDown();
+		Hieu.setWindowColor(Color.black);
 		Hieu.move(size);
 		Hieu.turn(90);
 		Hieu.move(50);
