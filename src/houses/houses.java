@@ -39,18 +39,42 @@ public class houses {
 		}
 		if (height.equals("large")) {
 			size = 250;
+			
 		}
-		Hieu.setSpeed(500);
+		Hieu.setSpeed(100);
 		Hieu.penDown();
 		Hieu.setWindowColor(Color.black);
 		Hieu.move(size);
-		Hieu.turn(90);
-		Hieu.move(50);
-		Hieu.turn(90);
+		if (size == 250) {
+			drawFlatRoof();
+		}
+		else {
+			drawPeakedRoof();
+		}
+		
 		Hieu.move(size);
 		Hieu.turn(-90);
 		Hieu.move(30);
 		Hieu.turn(-90);
 	}
-
+	static void drawPeakedRoof () {
+		
+		Hieu.turn(40);
+		Hieu.move(30); 
+		Hieu.turn(100);
+		Hieu.move(30);
+		Hieu.turn(40);
+		
+		
+	}
+	
+	static void drawFlatRoof () {
+		
+		Hieu.turn(90);
+		Hieu.move(50);
+		Hieu.turn(90);
+		
+	}
+	
+	
 }
