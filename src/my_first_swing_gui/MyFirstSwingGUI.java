@@ -31,9 +31,9 @@ JLabel label = new JLabel();
 		// 7. Set the text of the JLabel to a lovely greeting.
 label.setText("a love greeting");
 		// 8. Add the JPanel object to the JFrame
-
+framewindow.add(panel);
 		// 9. Add the JLabel object to the JPanel
-
+panel.add(label);
 		// 10. Pack your JFrame.
 
 		// 11. Run your program again. Do you see your message.
