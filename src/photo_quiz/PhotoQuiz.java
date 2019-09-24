@@ -25,7 +25,7 @@ public class PhotoQuiz {
 
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
-		// “Copy Image Address”)
+		// â€œCopy Image Addressâ€�)
 		String cherry = "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Cherry_Bomb_Tyler_the_Creator.png/220px-Cherry_Bomb_Tyler_the_Creator.png";
 		// 2. create a variable of type "Component" that will hold your image
 		Component tyler;
@@ -36,21 +36,21 @@ public class PhotoQuiz {
 		// 5. call the pack() method on the quiz window
 		quizWindow.pack();
 		// 6. ask a question that relates to the image
-		JOptionPane.showInputDialog("Who's this legend?");
+		String ans = JOptionPane.showInputDialog("What's this album called?");
 		// 7. print "CORRECT" if the user gave the right answer
-		if () {
+		if (ans.equals("Cherry Bomb")) {
 		System.out.println("CORRECT");
 		} 
 		// 8. print "INCORRECT" if the answer is wrong
-		if () {
+		else {
 		System.out.println("INCORRECT");
 		}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+		
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+		
 		// 11. add the second image to the quiz window
 
 		// 12. pack the quiz window
