@@ -26,7 +26,7 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// â€œCopy Image Addressâ€�)
-		String cherry = "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Cherry_Bomb_Tyler_the_Creator.png/220px-Cherry_Bomb_Tyler_the_Creator.png";
+		String cherry = "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tyler%2C_The_Creator_%288048745695%29_%28cropped%29.jpg";
 		// 2. create a variable of type "Component" that will hold your image
 		Component tyler;
 		// 3. use the "createImage()" method below to initialize your Component
@@ -36,9 +36,9 @@ public class PhotoQuiz {
 		// 5. call the pack() method on the quiz window
 		quizWindow.pack();
 		// 6. ask a question that relates to the image
-		String ans = JOptionPane.showInputDialog("What's this album called?");
+		String ans = JOptionPane.showInputDialog("Who is this guy?");
 		// 7. print "CORRECT" if the user gave the right answer
-		if (ans.equals("Cherry Bomb")) {
+		if (ans.equals("Tyler the Creator")) {
 		System.out.println("CORRECT");
 		} 
 		// 8. print "INCORRECT" if the answer is wrong
@@ -47,16 +47,18 @@ public class PhotoQuiz {
 		}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-		
+		quizWindow.remove(tyler);
 		// 10. find another image and create it (might take more than one line
 		// of code)
+		String rex = "https://www.coupdemainmagazine.com/sites/default/files/styles/full_width/public/article/14253/hero-14253-644466311.jpg?itok=e8lYksEo";
+		Component orange;
 		
 		// 11. add the second image to the quiz window
-
+		
 		// 12. pack the quiz window
 
 		// 13. ask another question
-
+		String apr = JOptionPane.showInputDialog("");
 		// 14+ check answer, say if correct or incorrect, etc.
 
 	}
