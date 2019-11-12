@@ -50,17 +50,23 @@ public class PhotoQuiz {
 		quizWindow.remove(tyler);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-		String rex = "https://www.coupdemainmagazine.com/sites/default/files/styles/full_width/public/article/14253/hero-14253-644466311.jpg?itok=e8lYksEo";
+		String rex = "https://i.ytimg.com/vi/Z9e7K6Hx_rY/maxresdefault.jpg";
 		Component orange;
 		
 		// 11. add the second image to the quiz window
-		
+		orange = createImage(rex);
+		quizWindow.add(orange);
 		// 12. pack the quiz window
-
+		quizWindow.pack();
 		// 13. ask another question
-		String apr = JOptionPane.showInputDialog("");
+		String answer = JOptionPane.showInputDialog("Who is this?");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+		if (answer.equals("Rex Orange County")) {
+			System.out.println("CORRECT");
+		}
+		else {
+			System.out.println("incorrect");
+		}
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
