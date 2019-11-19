@@ -76,7 +76,7 @@ System.out.println("mouse clicked");
 
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
-
+		playSound("Drumsound.wav");
 	}
 
 	private JLabel createLabelImage(String fileName) throws MalformedURLException {
