@@ -72,7 +72,13 @@ public class BodyPartQuiz {
 		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
-		
+		String guess2 = JOptionPane.showInputDialog("who is this?");
+		if (guess2 == ""); {
+		score = +1;
+		}
+		else {
+		JOptionPane.showMessageDialog(null, "");
+		}
 		// 9. Show them their current score
 		
 	}
