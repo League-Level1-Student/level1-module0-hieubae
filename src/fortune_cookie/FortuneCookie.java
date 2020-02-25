@@ -1,22 +1,41 @@
 package fortune_cookie;
 
-import javax.swing.JFrame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class FortuneCookie {
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class FortuneCookie implements ActionListener {
 
 	public void showButton() {
-		JButton button = new JButton();
-		
 		JFrame frame = new JFrame();
-		 frame.add(button);
-	     frame.pack(); 
-		     frame.setVisible(true);
+		JPanel panel = new JPanel();
+		 frame.add(panel);
+	     
+		 frame.pack(); 
+		 frame.setVisible(true);
+		
+		JButton button = new JButton();
+		panel.add(button);
+		frame.pack();
+		button.addActionListener(this);
+		
 	     System.out.println("Button clicked");
+	     
 	     
 	    }
 
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+		
 	   }
-
-	
-	
-
+		
+		
+		
+		
+		
