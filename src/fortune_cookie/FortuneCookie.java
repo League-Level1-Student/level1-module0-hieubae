@@ -2,6 +2,7 @@ package fortune_cookie;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -12,6 +13,7 @@ public class FortuneCookie implements ActionListener {
 	public void showButton() {
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
+		
 		 frame.add(panel);
 	     
 		 frame.pack(); 
@@ -24,7 +26,7 @@ public class FortuneCookie implements ActionListener {
 		
 	     System.out.println("Button clicked");
 	     
-	     
+	     int rand = new Random().nextInt(5);
 	    }
 
 	@Override
